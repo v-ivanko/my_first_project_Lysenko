@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-id=sizing: border-box;
+}
+body{
+    background-color: #F4EFE9;
+}
+header{
+    padding: 40px 0;
+    margin-bottom: 80px;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #1E1928;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+header nav ul li:hover{
+    transform: rotate(360deg);
+    transition: 0.3s;
+}
+
+#navigation{
+    display: flex;
+    list-style: none;
+}
