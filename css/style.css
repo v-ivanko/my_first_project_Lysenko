@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    box-id=sizing: border-box;
+    box-sizing: border-box;
 }
 body{
     background-color: #F4EFE9;
@@ -22,7 +22,7 @@ header{
 header nav ul li a{
     text-decoration: none;
     color: #1E1928;
-    font-family: Inter;
+    font-family: 'Inter', sans-serif;
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
@@ -32,8 +32,57 @@ header nav ul li:hover{
     transform: rotate(360deg);
     transition: 0.3s;
 }
-
 #navigation{
     display: flex;
     list-style: none;
+}
+.numbers{
+    position: relative;
+    max-width: 520px;
+}
+.numbers li{
+    list-style: none;
+}
+.numbers li h3{
+    color: #1E1928;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; /* 152.941% */
+    letter-spacing: 0.252px;
+}
+.numbers li p{
+    color: rgba(30, 25, 40, 0.80);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.176px;
+}
+.numbers li:before{
+    display: inline-flex;
+    content: "1";
+    color: #EDE6DD;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    background-color: #1E1928;
+    width: 40px;
+    height: 40px;
+    border-radius: 9999px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 24px;
+}
+.numbers li:nth-child(2):before {
+    content: "2";
+    margin-top: 46px;
+}
+.numbers li:nth-child(3):before {
+    content: "3";
+    margin-top: 46px;
 }
