@@ -38,10 +38,12 @@ header nav ul li:hover{
 }
 .numbers{
     position: relative;
-    max-width: 520px;
+    width: 520px;
 }
 .numbers li{
     list-style: none;
+    display: flex;
+    margin-bottom: 46px;
 }
 .numbers li h3{
     color: #1E1928;
@@ -51,6 +53,7 @@ header nav ul li:hover{
     font-weight: 700;
     line-height: 26px; /* 152.941% */
     letter-spacing: 0.252px;
+    margin-bottom: 10px;
 }
 .numbers li p{
     color: rgba(30, 25, 40, 0.80);
@@ -60,6 +63,10 @@ header nav ul li:hover{
     font-weight: 400;
     line-height: 24px; /* 150% */
     letter-spacing: 0.176px;
+
+}
+.numbers li p:nth-child(2):before {
+    font-size: 14px;
 }
 .numbers li:before{
     display: inline-flex;
@@ -80,9 +87,7 @@ header nav ul li:hover{
 }
 .numbers li:nth-child(2):before {
     content: "2";
-    margin-top: 46px;
 }
 .numbers li:nth-child(3):before {
     content: "3";
-    margin-top: 46px;
 }
