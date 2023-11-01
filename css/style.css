@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 body{
     background-color: #F4EFE9;
@@ -38,12 +40,12 @@ header nav ul li:hover{
 }
 .numbers{
     position: relative;
-    width: 520px;
+    max-width: 584px;
 }
 .numbers li{
     list-style: none;
     display: flex;
-    margin-bottom: 46px;
+    margin-bottom: 38px;
 }
 .numbers li h3{
     color: #1E1928;
@@ -63,10 +65,6 @@ header nav ul li:hover{
     font-weight: 400;
     line-height: 24px; /* 150% */
     letter-spacing: 0.176px;
-
-}
-.numbers li p:nth-child(2):before {
-    font-size: 14px;
 }
 .numbers li:before{
     display: inline-flex;
