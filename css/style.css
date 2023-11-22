@@ -400,7 +400,19 @@ section:last-of-type(2) h2{
 .icons{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 90px;
+}
+.icons img{
+    max-width: 160px;
+    display: inline-block;
+}
+.icons .owl-stage{
+   display: flex;
+    align-items: center;
+}
+.icons.owl-stage .owl-item{
+    text-align: center;
 }
 .knowledge a{
     padding: 10px 33px;
