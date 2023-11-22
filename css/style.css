@@ -408,7 +408,7 @@ section:last-of-type(2) h2{
     display: inline-block;
 }
 .icons .owl-stage{
-   display: flex;
+    display: flex;
     align-items: center;
 }
 .icons.owl-stage .owl-item{
