@@ -10,6 +10,12 @@ $(document).ready(function(){
             0:{
                 items:1
             },
+            480:{
+                items:2
+            },
+            600:{
+                items:3
+            },
             1100:{
                 items:7
             }

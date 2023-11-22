@@ -124,9 +124,9 @@ section:nth-of-type(2) {
     padding-top: 190px;
     padding-bottom: 40px;
     background-color: #FFD394;
-    background-image: url('images/bottom_logo.png');
+    background-image: url('../images/bottom_logo.png');
     background-repeat: no-repeat;
-    background-position: bottom -240px left 0px;
+    background-position: bottom -240px left 0;
     position: relative;
 }
 section:nth-of-type(2) .freeblock{
@@ -406,12 +406,13 @@ section:last-of-type(2) h2{
 .icons img{
     max-width: 160px;
     display: inline-block;
+    margin: 0 auto;
 }
 .icons .owl-stage{
     display: flex;
     align-items: center;
 }
-.icons.owl-stage .owl-item{
+.icons .owl-stage .owl-item{
     text-align: center;
 }
 .knowledge a{
