@@ -400,6 +400,7 @@ section:last-of-type(2) h2{
 .icons{
     display: flex;
     justify-content: space-between;
+    align-content: center;
     align-items: center;
     margin-bottom: 90px;
 }
@@ -414,6 +415,10 @@ section:last-of-type(2) h2{
 }
 .icons .owl-stage .owl-item{
     text-align: center;
+    max-height: 180px;
+}
+.owl-carousel .owl-item img{
+    margin: auto;
 }
 .knowledge a{
     padding: 10px 33px;
