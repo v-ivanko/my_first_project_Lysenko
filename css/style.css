@@ -4,6 +4,8 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
+
 }
 body{
     background-color: #F4EFE9;
@@ -531,4 +533,66 @@ section:nth-of-type(9) h4:after{
     font-size: 15px;
     line-height: 24px; /* 160% */
 }
-
+.faq{
+    padding: 100px;
+    background-color: white;
+}
+.faq h4{
+    color: black;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 65px;
+    font-style: normal;
+}
+.faq p{
+    font-family: Poppins,sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #242424;
+}
+.faq .ui-accordion .ui-accordion-header{
+    background-color: white;
+    border: solid 2px black;
+    padding: 15px 34px;
+    border-radius: 20px;
+    font-family: Poppins,sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.25;
+    text-align: start;
+    color: #242424;
+    position: relative;
+}
+.faq .ui-accordion .ui-widget-content{
+    border: solid 2px black;
+    border-top: none;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #f8f3db;
+    padding-bottom: 15px;
+    height: auto!important;
+}
+.faq .ui-accordion .ui-accordion-header.ui-state-active{
+    color: black;
+    border-bottom: none;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #f8f3db;
+}
+.faq .ui-accordion .ui-accordion-header.ui-state-active{
+height: auto;
+}
+.faq .ui-accordion .ui-icon {
+    background-image: none;
+    display: block!important;
+    content: url("../images/chevron-down.svg");
+    width: 32px;
+    height: 32px;
+    right: 30px;
+    position: absolute;
+}
+.faq .ui-accordion .ui-state-active  .ui-icon{
+    transform: rotate(-180deg);
+    transition: 0.3s;
+}
