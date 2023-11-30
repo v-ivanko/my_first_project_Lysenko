@@ -35,8 +35,13 @@ header nav ul li:hover{
     transform: rotate(360deg);
     transition: 0.3s;
 }
+header nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
 header nav li{
-    margin-left: 40px
+    margin-left: 40px;
 }
 #navigation{
     display: flex;
