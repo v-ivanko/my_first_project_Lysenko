@@ -529,111 +529,7 @@ section{
       }
     }
   }
-  &:nth-of-type(12) {
-    padding-top: 266px;
-    padding-bottom: 138px;
-    background-color: #1E1928;
-    background-repeat: no-repeat;
-    background-position: bottom -240px left 0px;
-    position: relative;
-    @include max-screen(1198px){
-      padding-top: 0;
-      padding-bottom: 30px;
-    }
-    .trial{
-      @include max-screen(585px){
-        margin-left: 15px;
-        margin-right: 15px;
-      }
-      h4{
-        color: #FFF;
-        font-family: $main_font;
-        font-size: 17px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 26px; /* 152.941% */
-        text-align: center;
-        letter-spacing: 0.252px;
-        margin-bottom: 37px;
-        @include max-screen(1198px){
-          margin-top: 25px;
-        }
-      }
-      p{
-        color: #EDE6DD;
-      text-align: center;
-      font-family: $main_font;
-      font-size: 12px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 20px; /* 166.667% */}
-      form {
-        border-radius: 9999px;
-        background: #FFF;
-        padding: 8px 12px;
-        display: flex;
-        max-width: 448px;
-        justify-content: space-between;
-        margin: 0 auto;
-        margin-bottom: 23px;
-        @include max-screen(1231px){
-          padding-left: 15px;
-        }
-        @include max-screen(971px){
-          padding: 6px 6px;
-          max-width: 386px;
-        }
-      }
-      input {
-        width: 180px;
-        border: none;
-        background-color: transparent;
-        padding: 10px 19px;
-        color: rgba(30, 25, 40, 1);
-        font-family: $main_font;
-        outline: none;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 20px;
-        @include max-screen(419px){
-          width: 48%;
-        }
-        @include max-screen(403px){
-          width: 50%;
-          padding-right: 1px;
-        }
-        @include max-screen(344px){
-          font-size: 11px;
-        }
-        @include max-screen(313px){
-          padding-left: 1px;
-        }
-        @include max-screen(284px){
-          width: 40%;
-        }
-      }
-      button {
-        padding: 10px 32px;
-        border-radius: 9999px;
-        background: $main_color;
-        color: #F4EFE9;
-        text-align: center;
-        font-family: $main_font;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 20px; /* 142.857% */
-        @include max-screen(406px){
-          font-size: 12px;
-          padding: 8px 21px;
-        }
-        @include max-screen(344px){
-          font-size: 11px;
-          padding: 8px 10px;
-        }
-      }
-    }
-  }
+
 }
 .mainbanner{
   max-width: 564px;
@@ -1170,6 +1066,10 @@ section{
     font-weight: 400;
     line-height: 42px; /* 131.25% */
     margin-bottom: 28px;
+    @include max-screen(491px){
+      font-size: 22px;
+      line-height: 26px;
+    }
   }
   p{
     color: rgba(30, 25, 40, 0.80);
@@ -1183,6 +1083,7 @@ section{
     max-width: 662px;
     @include max-screen(491px){
       font-size: 15px;
+      line-height: 27px;
     }
   }
 }
@@ -1227,71 +1128,6 @@ section{
     }
   }
 }
-}
-.faq{
-  padding: 100px;
-  background-color: white;
-  h4{
-    color: black;
-    text-align: center;
-    font-family: $main_font2;
-    font-size: 65px;
-    font-style: normal;
-  }
-  p{
-    font-family: Poppins,sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 26px;
-    color: #242424;
-  }
-  .ui-accordion{
-    .ui-accordion-header{
-      background-color: white;
-      border: solid 2px black;
-      padding: 15px 34px;
-      border-radius: 20px;
-      font-family: Poppins,sans-serif;
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 1.25;
-      text-align: start;
-      color: #242424;
-      position: relative;
-      .ui-state-active{
-        color: black;
-        border-bottom: none;
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-        background-color: #f8f3db;
-      }
-
-    }
-    .ui-widget-content{
-      border: solid 2px black;
-      border-top: none;
-      border-bottom-right-radius: 20px;
-      border-bottom-left-radius: 20px;
-      background-color: #f8f3db;
-      padding-bottom: 15px;
-      height: auto!important;
-    }
-    .ui-icon {
-      background-image: none;
-      display: block!important;
-      content: url("../images/chevron-down.svg");
-      width: 32px;
-      height: 32px;
-      right: 30px;
-      position: absolute;
-    }
-    .ui-state-active{
-      .ui-icon{
-        transform: rotate(-180deg);
-        transition: 0.3s;
-      }
-    }
-  }
 }
 .seen {
   text-align: center;
@@ -1338,26 +1174,65 @@ margin-top: 144px;
         @include max-screen(832px){
           margin-left: 0;
         }
+        @include max-screen(481px){
+          margin-left: 8px;
+        }
+        @include max-screen(473px){
+          margin-left: 0;
+        }
+        @include max-screen(444px){
+          margin-left: 8px;
+        }
       }
       @include max-screen(832px){
         margin-bottom: 16px;
       }
-      @include max-screen(575px){
+      @include max-screen(607px){
         width: 221px;
         height: 108px;
       }
+      @include max-screen(473px){
+        width: 176px;
+        height: 108px;
+      }
       @include max-screen(444px){
-        margin-right: 0;
+        margin-right: 8px;
+        margin-left: 8px;
+        width: 154px;
+        height: 100px;
+      }
+      @include max-screen(305px){
+        width: 137px;
+        height: 82px;
+      }
+      @include max-screen(339px){
+        width: 115px;
+        height: 75px;
       }
       img {
         max-width: 100%;
         max-height: 100%;
         display: block;
         margin: 0 auto;
+        @include max-screen(339px){
+          max-width: 66%;
+          max-height: 74%;
+        }
       }
     }
   }
 }
+.count{
+  padding-top: 266px;
+  padding-bottom: 138px;
+  background-color: #1E1928;
+  background-repeat: no-repeat;
+  background-position: bottom -240px left 0px;
+  position: relative;
+  @include max-screen(1198px){
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
 .freeblockthree{
   border-radius: 8px;
   text-align: center;
@@ -1447,6 +1322,100 @@ margin-top: 144px;
     padding-right: 15px;
   }
 }
+    .trial{
+      @include max-screen(585px){
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+      h4{
+        color: #FFF;
+        font-family: $main_font;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px; /* 152.941% */
+        text-align: center;
+        letter-spacing: 0.252px;
+        margin-bottom: 37px;
+        @include max-screen(1198px){
+          margin-top: 25px;
+        }
+      }
+      p{
+        color: #EDE6DD;
+        text-align: center;
+        font-family: $main_font;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 166.667% */}
+      form {
+        border-radius: 9999px;
+        background: #FFF;
+        padding: 8px 12px;
+        display: flex;
+        max-width: 448px;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-bottom: 23px;
+        @include max-screen(1231px){
+          padding-left: 15px;
+        }
+        @include max-screen(971px){
+          padding: 6px 6px;
+          max-width: 386px;
+        }
+      }
+      input {
+        width: 180px;
+        border: none;
+        background-color: transparent;
+        padding: 10px 19px;
+        color: rgba(30, 25, 40, 1);
+        font-family: $main_font;
+        outline: none;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        @include max-screen(419px){
+          width: 48%;
+        }
+        @include max-screen(403px){
+          width: 50%;
+          padding-right: 1px;
+        }
+        @include max-screen(344px){
+          font-size: 11px;
+        }
+        @include max-screen(313px){
+          padding-left: 1px;
+        }
+        @include max-screen(284px){
+          width: 40%;
+        }
+      }
+      button {
+        padding: 10px 32px;
+        border-radius: 9999px;
+        background: $main_color;
+        color: #F4EFE9;
+        text-align: center;
+        font-family: $main_font;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 142.857% */
+        @include max-screen(406px){
+          font-size: 12px;
+          padding: 8px 21px;
+        }
+        @include max-screen(344px){
+          font-size: 11px;
+          padding: 8px 10px;
+        }
+      }
+    }
+  }
 footer {
   background-color: #FFF;
   padding: 64px 40px;
